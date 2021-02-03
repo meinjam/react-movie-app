@@ -8,6 +8,44 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.navbar li.nav-item {
+  margin-left: 1.2rem;
+}
+
 .movie-list .card:hover {
   transform: translate(0, -10px);
+}
+
+/* ======================Single Movie Page ======================*/
+.single_movie {
+  /* background: linear-gradient(
+      to right bottom,
+      rgba(29.8%, 29.02%, 36.86%, 1) 150px,
+      rgba(29.8%, 29.02%, 36.86%, 0.84) 100%
+    ),
+    url('https://image.tmdb.org/t/p/original/6mKAKhj8POVGqV1GsroS5mGIUe9.jpg')
+      no-repeat center center/cover; */
+  /* background: linear-gradient(
+      90deg,
+      rgba(29.8%, 29.02%, 36.86%, 1) 150px,
+      rgba(29.8%, 29.02%, 36.86%, 0.84) 100%
+    ),
+    url('https://image.tmdb.org/t/p/original/6mKAKhj8POVGqV1GsroS5mGIUe9.jpg')
+      no-repeat center center/cover;
+  animation: bg-animation 25s infinite;
+  background-size: 300%; */
+  background-position-x: center;
+  background-position-y: -350px;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Search = ({ movies, addToWhitelist }) => {
   console.log(movies);
 
@@ -15,12 +17,12 @@ const Search = ({ movies, addToWhitelist }) => {
                 <p className='card-text'>{movie.release_date}</p>
                 <div className='row'>
                   <div className='col-md-6'>
-                    <a
-                      href={`https://api.themoviedb.org/3/movie/${movie.id}?api_key=17dfb2bb3935f937b92974d037cf4b4f`}
+                    <Link
+                      to={`/movie/${movie.id}`}
                       className='btn btn-primary btn-block'
                     >
                       Details
-                    </a>
+                    </Link>
                   </div>
                   <div className='col-md-6'>
                     <a
